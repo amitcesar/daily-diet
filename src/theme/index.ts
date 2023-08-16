@@ -15,7 +15,7 @@ export default {
     GRAY_400: '#B9BBBC',
     GRAY_300: '#5C6265',
     GRAY_200: '#333638',
-    GRAY_100: '#E1E1E6',
+    GRAY_100: '#1B1D1E',
 
     WHITE: '#FFFFFF',
   },
@@ -25,7 +25,7 @@ export default {
     MD: 16,
     LG: 18,
     XL: 24,
-    xxl: 32,
+    XXL: 32,
   },
   FONT_FAMILY: {
     REGULAR: 'NunitoSans_400Regular',
