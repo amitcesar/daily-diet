@@ -7,7 +7,7 @@ export default {
 
     GREEN_MID: '#CBE4B4',
     GREEN_DARK: '#639339',
-    GREEN_LIGHT: 'E5F0DB',
+    GREEN_LIGHT: '#E5F0DB',
     
     GRAY_700: '#FAFAFA',
     GRAY_600: '#EFF0F0',
@@ -31,4 +31,4 @@ export default {
     REGULAR: 'NunitoSans_400Regular',
     HEADING: 'NunitoSans_700Bold',
   }
-};
+} as const;

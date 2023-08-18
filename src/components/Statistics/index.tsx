@@ -1,5 +1,11 @@
-import { Text, View } from "react-native";
-import { Container, Title, Subtitle } from "./styles";
+import {
+  Container,
+  Title,
+  Subtitle,
+  IconWrapper,
+  ContentWrapper,
+} from "./styles";
+import { ArrowUpRight } from "phosphor-react-native";
 
 interface StatiticsProps {
   title: string;
@@ -9,8 +15,14 @@ interface StatiticsProps {
 export function Statitics({ title, subtitle }: StatiticsProps) {
   return (
     <Container>
-      <Title>{title}</Title>
-      <Subtitle>{subtitle}</Subtitle>
+      <IconWrapper>
+        <ArrowUpRight size={24} />
+      </IconWrapper>
+
+      <ContentWrapper>
+        <Title>{title}</Title>
+        <Subtitle>{subtitle}</Subtitle>
+      </ContentWrapper>
     </Container>
   );
 }

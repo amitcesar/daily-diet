@@ -9,6 +9,7 @@ export const Title = styled.Text`
   color: ${({theme}) => theme.COLORS.GRAY_100};
   font-size: ${({theme}) => theme.FONT_SIZE.SM}px;
   font-family: ${({theme}) => theme.FONT_FAMILY.REGULAR};
+  padding: 4px;
 `;
 
 export const NewMealButton = styled.TouchableOpacity`
@@ -16,11 +17,17 @@ export const NewMealButton = styled.TouchableOpacity`
   height: 50px;
   border-radius: 6px;
   background-color: ${({theme}) => theme.COLORS.GRAY_200};
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4px;
   `;
 
   export const TitleButton = styled.Text`
     color: ${({theme}) => theme.COLORS.WHITE};
-    text-align: center;
-    padding: 16px;
+    padding-left: 10px;
   `;
+
+  
 
