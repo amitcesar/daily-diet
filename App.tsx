@@ -1,15 +1,13 @@
 import { StatusBar, View } from "react-native";
-
 import { ThemeProvider } from "styled-components/native";
 import theme from "./src/theme/index";
-
 import {
   useFonts,
   NunitoSans_400Regular,
   NunitoSans_700Bold,
 } from "@expo-google-fonts/nunito-sans";
-import { Home } from "./src/screens/Home";
 
+import { Routes } from "@routes/index";
 export default function App() {
   const [fontsLoaded] = useFonts({
     NunitoSans_400Regular,
@@ -28,7 +26,7 @@ export default function App() {
           backgroundColor="transparent"
           translucent
         />
-        {fontsLoaded ? <Home /> : <View />}
+        {fontsLoaded ? <Routes /> : <View />}
       </ThemeProvider>
     </>
   );

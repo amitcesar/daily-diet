@@ -12,7 +12,7 @@ interface StatiticsProps {
   subtitle: string;
 }
 
-export function Statitics({ title, subtitle }: StatiticsProps) {
+export function StatiticsSummary({ title, subtitle }: StatiticsProps) {
   return (
     <Container>
       <IconWrapper>
