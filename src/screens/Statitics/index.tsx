@@ -1,9 +1,12 @@
-import { View, Text } from "react-native";
+import { Header } from "./components/Header";
+import { Content } from "./components/Content";
+import { StatiticsContainer } from "./styles";
 
-export function Statitics() {
+export function StatiticsScreen() {
   return (
-    <View>
-      <Text>Statitics</Text>
-    </View>
+    <StatiticsContainer>
+      <Header />
+      <Content />
+    </StatiticsContainer>
   );
 }

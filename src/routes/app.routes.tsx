@@ -4,11 +4,12 @@ import {
 } from "@react-navigation/native-stack";
 import { Home } from "@screens/Home";
 import { SignUpScreen } from "@screens/SignUpMeal";
-import { View } from "react-native";
+import { StatiticsScreen } from "@screens/Statitics";
 
 type AppRoutes = {
   home: undefined;
   signUp: undefined;
+  statitics: undefined;
 };
 
 export type AppNavigatorRoutesProps = NativeStackNavigationProp<AppRoutes>;
@@ -23,6 +24,8 @@ export function AppRoutes() {
       }}
     >
       <Screen name="home" component={Home} />
+      <Screen name="statitics" component={StatiticsScreen} />
+      <Screen name="signUp" component={SignUpScreen} />
     </Navigator>
   );
 }

@@ -6,6 +6,8 @@ import {
   ContentWrapper,
 } from "./styles";
 import { ArrowUpRight } from "phosphor-react-native";
+import { useNavigation } from "@react-navigation/native";
+import { AppNavigatorRoutesProps } from "@routes/app.routes";
 
 interface StatiticsProps {
   title: string;
@@ -13,8 +15,14 @@ interface StatiticsProps {
 }
 
 export function StatiticsSummary({ title, subtitle }: StatiticsProps) {
+  const navigation = useNavigation<AppNavigatorRoutesProps>();
+
+  function handleUserToStatiticsScreen() {
+    navigation.navigate("statitics");
+  }
+
   return (
-    <Container>
+    <Container onPress={handleUserToStatiticsScreen}>
       <IconWrapper>
         <ArrowUpRight size={24} />
       </IconWrapper>
